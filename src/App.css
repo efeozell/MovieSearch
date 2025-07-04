@@ -1,0 +1,123 @@
+:root {
+  --primary-color: #212529;
+  --secondary-color: #343a40;
+  --accent-color: #007bff;
+  --text-color: #f8f9fa;
+  --card-bg: #495057;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.app {
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  color: var(--accent-color);
+  font-size: 3rem;
+}
+
+.arama-formu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.arama-formu input {
+  width: 50%;
+  max-width: 400px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 2px solid var(--secondary-color);
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.arama-formu input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.arama-formu button {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.arama-formu button:hover {
+  background-color: #0056b3;
+}
+
+.film-konteyneri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 10%;
+}
+
+.durum-mesaji {
+  grid-column: 1 / -1; /* Mesajın tüm grid genişliğini kaplamasını sağlar */
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.durum-mesaji.hata {
+  color: #dc3545;
+}
+
+.film-karti {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.film-karti:hover {
+  transform: scale(1.05);
+}
+
+.film-karti img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.film-bilgisi {
+  padding: 15px;
+  flex-grow: 1; /* Kartların aynı boyda kalmasını sağlar */
+}
+
+.film-bilgisi h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.film-bilgisi p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
