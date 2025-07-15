@@ -1,4 +1,4 @@
-# RecipeFinder App
+# MovieSearch App
 
 The main purpose of this project was to improve myself and gain hands-on experience.
 Of course, creating quality work and presenting something valuable to others in the most professional way possible is one of my biggest goals.
